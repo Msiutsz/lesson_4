@@ -1,14 +1,22 @@
 * {box-sizing: border-box; }
+* {font-family: "arial" }
+html {
+  margin: 0;
+  padding: 0;
+}
 aside {
   float: right;
+  clear: both;
+  z-index: 10;
+  width: 30%;
+}
+nav {
+  margin: 0rem 0rem 0rem 0rem;
 }
 header {
   background-color: rgb(44, 154, 183);
   border: 0px;
   padding: 10px;
-}
-nav {
-  margin: 0rem 0rem 0rem 0rem;
 }
 h1 {
   color: white;
@@ -22,19 +30,18 @@ h2 {
   color: rgb(44, 154, 183);
 }
 .nav {
-  background-color: #f3f3f3;
   list-style-type: none;
-  padding: 0px;
-  border: 0px;
-  margin-left: 15px;
   overflow: hidden;
+  background-color: #f3f3f3;
+  margin: none;
+  padding: none;
 }
 .nav li {
-  float: left;
+  display: inline-block;
   content: "/";
 }
 .footer li {
-  float: left;
+  display: inline-block;
   content: "/";
 }
 li:before {
@@ -43,8 +50,10 @@ li:before {
 .nav li a {
   display: inline;
   color: black;
+  font-weight: bold;
   text-align: center;
-  margin-left: 4rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   text-decoration: none;
 }
 .footer li a {
@@ -52,14 +61,17 @@ li:before {
   color: white;
   text-align: center;
   text-decoration: none;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 li:first-child:before {
   content: "";
   padding-right: 0;
+  margin-left: 2rem;
 }
 * section {
   padding: 10px;
-  margin: 0rem 0rem 0rem 4rem;
+  margin: 0rem 2rem 0rem 2rem;
 }
 a {
   color: rgb(44, 154, 183);
@@ -80,9 +92,14 @@ footer {
 }
 .quote {
   color: rgb(44, 154, 183);
+  font-size: 150%;
 }
 .clearfix::after {
     content:"";
     display: block;
     clear: both;
+    height: 60px;
+}
+.clearfix {
+  overflow: hidden;
 }
