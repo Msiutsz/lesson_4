@@ -20,21 +20,31 @@ header {
 }
 h1 {
   color: white;
-  margin: 4rem 4rem 4rem 5rem;
+  margin: 4rem 0rem 2rem 5rem;
+  font-size: 40px;
 }
 h1 p {
   font-style: italic;
-  font-size:20px
+  font-size:15px
 }
 h2 {
+  color: rgb(44, 154, 183);
+}
+.text {
   color: rgb(44, 154, 183);
 }
 .nav {
   list-style-type: none;
   overflow: hidden;
   background-color: #f3f3f3;
-  margin: none;
-  padding: none;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  color: white;
+  margin: 0rem 0rem 2rem 5rem;
+  font-style: italic;
+  font-size:20px
 }
 .nav li {
   display: inline-block;
