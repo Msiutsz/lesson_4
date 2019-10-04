@@ -9,6 +9,7 @@ aside {
   clear: both;
   z-index: 10;
   width: 30%;
+  background-color: grey;
 }
 nav {
   margin: 0rem 0rem 0rem 0rem;
@@ -49,6 +50,7 @@ h2 {
 .nav li {
   display: inline-block;
   content: "/";
+  font-size: 30px;
 }
 .footer li {
   display: inline-block;
@@ -84,7 +86,7 @@ li:first-child:before {
   margin: 0rem 2rem 0rem 2rem;
 }
 a {
-  color: rgb(44, 154, 183);
+  color: white;
 }
 footer {
   clear: right;
@@ -112,4 +114,12 @@ footer {
 }
 .clearfix {
   overflow: hidden;
+}
+.hidden {
+  position: relative;
+  left: -10000px;
+  top: auto;
+}
+.hidden:focus {
+  left: 0;
 }
